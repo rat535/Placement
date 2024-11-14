@@ -1,0 +1,71 @@
+package com.jobs.bitlabs.Implement;
+
+import java.util.Date;
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.jobs.bitlabs.dto.NotificationDto;
+import com.jobs.bitlabs.dto.UserDto;
+import com.jobs.bitlabs.entity.Notification;
+import com.jobs.bitlabs.entity.Users;
+import com.jobs.bitlabs.enums.NotificationType;
+import com.jobs.bitlabs.repo.NotificationRepository;
+import com.jobs.bitlabs.service.NotificationService;
+
+public class NotificationServiceImpl implements NotificationService {
+
+	@Autowired
+	private NotificationRepository notificationRepository;
+	
+	@Autowired
+	private ModelMapper modelMapper;
+
+	
+	public Notification dtoToNotification(NotificationDto notDto) {
+		Notification user = this.modelMapper.map(notDto, Notification.class);
+		return user;
+
+	}
+	
+	public NotificationDto UserToDto(Notification user) {
+		NotificationDto userDto = this.modelMapper.map(user, NotificationDto.class);
+		return userDto;
+	}
+
+
+	
+	@Override
+	public void addJobRecommendationNotification(Long userId, String jobTitle) {
+		String message = "New job recommendation: " + jobTitle;
+		NotificationDto notificationDto = new NotificationDto();
+		notificationDto.setMessage(message);
+		notificationDto.setUserId(userId);
+		notificationDto.setTimestamp(new Date());
+		notificationDto.setType(NotificationType.JOB_APPLICATION);
+		Notification notification = this.dtoToNotification(notificationDto);
+		notificationRepository.save(notification);
+	}
+
+	@Override
+	public void addJobApplicationNotification(Long userId, String jobTitle) {
+		String message = "You applied for the job: " + jobTitle;
+
+		NotificationDto notificationDto = new NotificationDto();
+		notificationDto.setMessage(message);
+		notificationDto.setUserId(userId);
+		notificationDto.setTimestamp(new Date());
+		notificationDto.setType(NotificationType.JOB_APPLICATION);
+		Notification notification = this.dtoToNotification(notificationDto);
+		
+        notificationRepository.save(notification);
+
+	}
+
+	@Override
+	public List<Notification> getUnreadNotifications(Long userId) {
+		return notificationRepository.findByUserIdAndIsReadFalse(userId);
+	}
+
+}

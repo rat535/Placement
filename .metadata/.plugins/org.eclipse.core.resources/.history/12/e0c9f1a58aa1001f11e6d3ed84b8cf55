@@ -1,0 +1,36 @@
+package com.jobs.bitlabs.extra;
+
+public class DashBoard {
+
+	private Long appliedJobCount;
+	private Long recommendedJobCount;
+
+	
+	
+	public DashBoard() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	// Constructors, getters, and setters
+	public DashBoard(Long appliedJobCount, Long recommendedJobCount) {
+		this.appliedJobCount = appliedJobCount;
+		this.recommendedJobCount = recommendedJobCount;
+	}
+
+	public Long getAppliedJobCount() {
+		return appliedJobCount;
+	}
+
+	public void setAppliedJobCount(Long appliedJobCount) {
+		this.appliedJobCount = appliedJobCount;
+	}
+
+	public Long getRecommendedJobCount() {
+		return recommendedJobCount;
+	}
+
+	public void setRecommendedJobCount(Long recommendedJobCount) {
+		this.recommendedJobCount = recommendedJobCount;
+	}
+}

@@ -1,0 +1,28 @@
+package com.jobs.bitlabs.Implement;
+
+import java.util.List;
+
+import com.jobs.bitlabs.entity.Notification;
+import com.jobs.bitlabs.service.NotificationService;
+
+public class NotificationServiceImpl implements NotificationService {
+
+	@Override
+	public void addJobRecommendationNotification(Long userId, String jobTitle) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void addJobApplicationNotification(Long userId, String jobTitle) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Notification> getUnreadNotifications(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

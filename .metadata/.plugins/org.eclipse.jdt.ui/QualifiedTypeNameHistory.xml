@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="jakarta.persistence.ElementCollection"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.Users"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.Parameter"/>
+    <fullyQualifiedTypeName name="org.springframework.format.annotation.DateTimeFormat"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.Skills"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.PefferedLocation"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonFormat"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.dto.CompanyJobDto"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.Qualifaction"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,20 @@
+package com.jobs.bitlabs.Implement;
+
+import com.jobs.bitlabs.enums.ApplicationStatus;
+import com.jobs.bitlabs.service.JobApplicationService;
+
+public class JobApplicationServiceImpl implements JobApplicationService {
+
+	@Override
+	public ApplicationStatus getJobApplicationStatus(Long userId, String jobId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateApplicationStatus(Long userId, String jobId, ApplicationStatus status) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

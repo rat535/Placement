@@ -1,0 +1,35 @@
+package com.jobs.bitlabs.Implement;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.jobs.bitlabs.entity.Notification;
+import com.jobs.bitlabs.repo.NotificationRepository;
+import com.jobs.bitlabs.service.NotificationService;
+
+public class NotificationServiceImpl implements NotificationService {
+
+	@Autowired
+	private NotificationRepository notificationRepository;
+
+	@Override
+	public void addJobRecommendationNotification(Long userId, String jobTitle) {
+		String message = "New job recommendation: " + jobTitle;
+		Notification notification = new Notification(userId, message, new Date(), NotificationType.JOB_RECOMMENDATION);
+		notificationRepository.save(notification);
+	}
+
+	@Override
+	public void addJobApplicationNotification(Long userId, String jobTitle) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Notification> getUnreadNotifications(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
