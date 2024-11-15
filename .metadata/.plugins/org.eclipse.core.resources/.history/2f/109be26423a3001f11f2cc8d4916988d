@@ -53,7 +53,7 @@ public class UserController {
 
 	@Autowired
 	private NotificationService notificationService;
-
+	
 	@Autowired
 	private JobApplicationService jobApplicationService;
 
@@ -149,13 +149,15 @@ public class UserController {
 	public ResponseEntity<String> applyForJob(@PathVariable Long userId, @PathVariable String jobId) {
 		try {
 			userService.applyForJob(userId, jobId);
-
+			
+			
 			return new ResponseEntity<>("Job application successful", HttpStatus.OK);
 		} catch (CustomException ex) {
 			return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
 		}
 	}
-
+	
+	
 //	@PutMapping("/{userId}/notifications/read/{notificationId}")
 //	public ResponseEntity<String> markNotificationAsRead(@PathVariable Long userId, @PathVariable Long notificationId) {
 //		try {
@@ -199,7 +201,7 @@ public class UserController {
 		address.setAlternateMobile(alternateMobile);
 		// Create a new UserDto from the parameters
 		UserDto userDto = new UserDto(name, email, whatsapp, qualification, specialization, totalExperience,
-				preferdJobLocation, address, dateOfBirth, skills, null, null, null);
+				preferdJobLocation, address, dateOfBirth, skills, null, null,null);
 
 		// Create user using the service
 		UserDto created = userService.createUser(userDto);
@@ -218,14 +220,13 @@ public class UserController {
 
 	@Operation(summary = "get the status of the job")
 	@GetMapping("/status/{userId}/{jobId}")
-	public ResponseEntity<ApplicationStatus> getApplicationStatus(@PathVariable Long userId,
-			@PathVariable String jobId) {
-		ApplicationStatus applicationStatus = jobApplicationService.getJobApplicationStatus(userId, jobId);
-
-		if (applicationStatus != null) {
-			return ResponseEntity.ok(applicationStatus);
-		} else {
-			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
-		}
+	public ResponseEntity<ApplicationStatus> getApplicationStatus(@PathVariable Long userId, @PathVariable String jobId) {
+	    ApplicationStatus applicationStatus = jobApplicationService.getJobApplicationStatus(userId, jobId);
+	    
+	    if (applicationStatus != null) {
+	        return ResponseEntity.ok(applicationStatus);
+	    } else {
+	        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+	    }
 	}
 }

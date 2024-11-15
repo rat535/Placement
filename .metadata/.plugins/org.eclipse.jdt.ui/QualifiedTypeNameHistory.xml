@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.persistence.ElementCollection"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.Parameter"/>
     <fullyQualifiedTypeName name="org.springframework.format.annotation.DateTimeFormat"/>
@@ -17,21 +16,25 @@
     <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
     <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.repo.NotificationRepository"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.dto.NotificationDto"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.Notification"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="com.jobs.bitlabs.service.NotificationService"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.repo.UserRepo"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.repo.CompanyJobRepo"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.Users"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.CompanyJob"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.service.JobApplicationService"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.ApplicationStatus"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.NotificationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ElementCollection"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.CollectionTable"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.service.NotificationService"/>
 </qualifiedTypeNameHistroy>

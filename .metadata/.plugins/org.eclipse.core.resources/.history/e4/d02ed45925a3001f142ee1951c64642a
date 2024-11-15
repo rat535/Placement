@@ -162,7 +162,11 @@ public class UserServieceImpl implements UserService {
 		
 		boolean matchesQualification = job.getQualification() == user.getQualification();
 
-		boolean matchesExperience =(user.getTotalExperience() >= job.getExperienceMin());
+
+		
+		// (user.getTotalExperience() >= job.getExperienceMin());
+				//&& 
+		boolean matchesExperience = (user.getTotalExperience() <= job.getExperienceMax());
 
 		System.out.println(matchesExperience);
 	
@@ -172,8 +176,8 @@ public class UserServieceImpl implements UserService {
 		boolean matchesLocation = user.getPreferdJobLocation().stream()
                 .anyMatch(job.getPreferdJobLocation()::contains);
 
-		// If all conditions match, the user can apply  
-		return matchesQualification && matchesSkills && matchesLocation && matchesExperience;
+		// If all conditions match, the user can apply  && matchesExperience
+		return matchesQualification && matchesSkills && matchesLocation;
 	}
 
 	@Override

@@ -40,7 +40,6 @@ public class Users {
 
 	private String whatsapp;
 
-	@Enumerated(EnumType.STRING)
 	@NotNull(message = "Qualification is required.")
 	private Qualifaction qualification;
 

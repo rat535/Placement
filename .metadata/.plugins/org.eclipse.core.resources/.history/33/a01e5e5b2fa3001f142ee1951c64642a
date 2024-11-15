@@ -43,9 +43,7 @@ public class JobApplicationServiceImpl implements JobApplicationService {
         if (user.getAppliedJobs().contains(job)) {
             user.setApplicationStatus(status);
             
-            String statusString = status.name(); 
-            
-            notificationService.addJobStatusUpdateNotification(userId, jobTitle, statusString);
+            notificationService.addJobStatusUpdateNotification(userId, jobTitle, jobTitle);
             usersRepository.save(user); // Save updated status
         } else {
             throw new RuntimeException("User has not applied for this job");

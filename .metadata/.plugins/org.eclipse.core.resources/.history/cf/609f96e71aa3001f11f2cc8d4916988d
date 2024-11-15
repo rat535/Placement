@@ -44,7 +44,6 @@ public class NotificationServiceImpl implements NotificationService {
 		notificationDto.setUserId(userId);
 		notificationDto.setTimestamp(new Date());
 		notificationDto.setType(NotificationType.JOB_APPLIED);
-		
 		Notification notification = this.dtoToNotification(notificationDto);
 		notificationRepository.save(notification);
 	}

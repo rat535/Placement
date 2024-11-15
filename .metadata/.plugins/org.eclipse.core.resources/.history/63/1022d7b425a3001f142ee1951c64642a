@@ -5,6 +5,8 @@ import java.util.HashSet;
 
 import java.util.Set;
 
+
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -31,7 +33,7 @@ public class CompanyJob {
 	private String JobTitle;
 	@Column(length = 5000)
 	private String JobDescription;
-
+	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
 	@Temporal(TemporalType.DATE)
 	private Date jobposteddate;
@@ -63,9 +65,9 @@ public class CompanyJob {
 	}
 
 	public CompanyJob(String jobId, String jobTitle, String jobDescription, Date jobposteddate, String companyId,
-			Qualifaction qualification, Long experienceMin, Long experienceMax,
-			Set<com.jobs.bitlabs.enums.Skills> skills, Long salaryMin, Long salaryMax,
-			Set<PefferedLocation> preferdJobLocation, String jobType, Boolean status, Set<Users> users) {
+			Qualifaction qualification, Long experienceMin, Long experienceMax, Set<com.jobs.bitlabs.enums.Skills> skills,
+			Long salaryMin, Long salaryMax, Set<PefferedLocation> preferdJobLocation, String jobType, Boolean status,
+			Set<Users> users) {
 		super();
 		JobId = jobId;
 		JobTitle = jobTitle;
