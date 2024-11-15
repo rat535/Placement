@@ -1,7 +1,6 @@
 package com.jobs.bitlabs.dto;
 
 import java.util.Date;
-import java.util.List;
 
 import com.jobs.bitlabs.enums.NotificationType;
 
@@ -10,7 +9,7 @@ import com.jobs.bitlabs.enums.NotificationType;
 public class NotificationDto {
 
 	private Long userId;
-	 private List<String> message;
+    private String message;
     private Date timestamp;
     private boolean isRead = false;
 
@@ -24,10 +23,7 @@ public class NotificationDto {
 	}
 
 
-
-
-
-	public NotificationDto(Long userId, List<String> message, Date timestamp, boolean isRead, NotificationType type) {
+	public NotificationDto(Long userId, String message, Date timestamp, boolean isRead, NotificationType type) {
 		super();
 		this.userId = userId;
 		this.message = message;
@@ -35,9 +31,6 @@ public class NotificationDto {
 		this.isRead = isRead;
 		this.type = type;
 	}
-
-
-
 
 
 	public Long getUserId() {
@@ -50,21 +43,14 @@ public class NotificationDto {
 	}
 
 
-
-	public List<String> getMessage() {
+	public String getMessage() {
 		return message;
 	}
 
 
-
-
-
-	public void setMessage(List<String> message) {
+	public void setMessage(String message) {
 		this.message = message;
 	}
-
-
-
 
 
 	public Date getTimestamp() {

@@ -3,6 +3,6 @@ package com.jobs.bitlabs.enums;
 public enum NotificationType {
 
 	JOB_RECOMMENDATION,
-	JOB_APPLIED,
+    JOB_APPLICATION,
     STATUS_UPDATE
 }

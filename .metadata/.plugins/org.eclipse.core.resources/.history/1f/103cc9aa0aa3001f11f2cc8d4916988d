@@ -22,7 +22,6 @@ import com.jobs.bitlabs.enums.Qualifaction;
 import com.jobs.bitlabs.service.CompanyJobService;
 import com.jobs.bitlabs.service.JobApplicationService;
 
-import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -42,7 +41,6 @@ public class CompanyJobController {
 
 
 
-	@Operation(summary = "create a job")
 	@PostMapping("job")
 	public CompanyJobDto createjob(@RequestParam String JobId, @RequestParam String JobTitle,
 			@RequestParam String JobDescription,
@@ -63,19 +61,16 @@ public class CompanyJobController {
 
 	}
 
-	@Operation(summary = "get all the job")
 	@GetMapping("getAllJobs")
 	public List<CompanyJobDto> getAlljobs() {
 		return companyjobservice.getAllJobs();
 	}
 
-	@Operation(summary = "Delete")
 	@DeleteMapping("deleteJob")
 	public void deleteJobById(@RequestParam String Jobid) {
 		companyjobservice.deleteByJobId(Jobid);
 	}
 	
-	@Operation(summary = "status")
 	@GetMapping("/status/{userId}/{jobId}")
     public ApplicationStatus getApplicationStatus(@PathVariable Long userId, @PathVariable String jobId) {
         return jobApplicationService.getJobApplicationStatus(userId, jobId);
@@ -83,7 +78,6 @@ public class CompanyJobController {
 	
 
 
-	@Operation(summary = "updated status")
     @PutMapping("/status/{userId}/{jobId}")
     public void updateApplicationStatus(@PathVariable Long userId, @PathVariable String jobId, 
                                         @RequestParam ApplicationStatus status) {

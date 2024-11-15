@@ -149,24 +149,13 @@ public class UserController {
 	public ResponseEntity<String> applyForJob(@PathVariable Long userId, @PathVariable String jobId) {
 		try {
 			userService.applyForJob(userId, jobId);
-			
+			notificationService.addJobApplicationNotification(userId, "Job ID: " + jobId);
 			
 			return new ResponseEntity<>("Job application successful", HttpStatus.OK);
 		} catch (CustomException ex) {
 			return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);
 		}
 	}
-	
-	
-//	@PutMapping("/{userId}/notifications/read/{notificationId}")
-//	public ResponseEntity<String> markNotificationAsRead(@PathVariable Long userId, @PathVariable Long notificationId) {
-//		try {
-//			notificationService.markNotificationAsRead(userId, notificationId);
-//			return new ResponseEntity<>("Notification marked as read", HttpStatus.OK);
-//		} catch (Exception e) {
-//			return new ResponseEntity<>("Error marking notification as read", HttpStatus.BAD_REQUEST);
-//		}
-//	}
 
 	// -----------------------------------------------------------------------------
 

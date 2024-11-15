@@ -9,7 +9,6 @@ import com.jobs.bitlabs.enums.ApplicationStatus;
 import com.jobs.bitlabs.repo.CompanyJobRepo;
 import com.jobs.bitlabs.repo.UserRepo;
 import com.jobs.bitlabs.service.JobApplicationService;
-import com.jobs.bitlabs.service.NotificationService;
 
 @Service
 public class JobApplicationServiceImpl implements JobApplicationService {
@@ -20,8 +19,6 @@ public class JobApplicationServiceImpl implements JobApplicationService {
 	@Autowired
 	private CompanyJobRepo companyJobRepository;
 
-	@Autowired
-	private NotificationService notificationService;
 	@Override
 	public ApplicationStatus getJobApplicationStatus(Long userId, String jobId) {
 		Users user = usersRepository.findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
@@ -39,11 +36,8 @@ public class JobApplicationServiceImpl implements JobApplicationService {
 		Users user = usersRepository.findById(userId).orElseThrow(() -> new RuntimeException("User not found"));
         CompanyJob job = companyJobRepository.findById(jobId).orElseThrow(() -> new RuntimeException("Job not found"));
 
-        String jobTitle = job.getJobTitle();
         if (user.getAppliedJobs().contains(job)) {
             user.setApplicationStatus(status);
-            
-            notificationService.addJobStatusUpdateNotification(userId, jobTitle, jobTitle);
             usersRepository.save(user); // Save updated status
         } else {
             throw new RuntimeException("User has not applied for this job");

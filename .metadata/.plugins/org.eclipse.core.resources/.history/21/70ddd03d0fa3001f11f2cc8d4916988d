@@ -83,7 +83,6 @@ public class CompanyJobController {
 	
 
 
-	@Operation(summary = "updated status")
     @PutMapping("/status/{userId}/{jobId}")
     public void updateApplicationStatus(@PathVariable Long userId, @PathVariable String jobId, 
                                         @RequestParam ApplicationStatus status) {

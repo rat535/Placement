@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="jakarta.persistence.ElementCollection"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
-    <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.Users"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.Parameter"/>
     <fullyQualifiedTypeName name="org.springframework.format.annotation.DateTimeFormat"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.Skills"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.PefferedLocation"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonFormat"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.dto.CompanyJobDto"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.Qualifaction"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Enumerated"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EnumType"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.repo.NotificationRepository"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.dto.NotificationDto"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.Notification"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.service.NotificationService"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.repo.UserRepo"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.repo.CompanyJobRepo"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.Users"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.CompanyJob"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.service.JobApplicationService"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.ApplicationStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.NotificationType"/>
 </qualifiedTypeNameHistroy>

@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=bitLabs/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jobs.bitlabs.service{NotificationService.java[NotificationService" modifiers="513" timestamp="1731563272134"/>
+    <typeInfo handle="=bitLabs/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jobs.bitlabs.service{JobApplicationService.java[JobApplicationService" modifiers="513" timestamp="1731575788036"/>
+</typeInfoHistroy>
