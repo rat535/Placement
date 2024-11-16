@@ -1,7 +1,10 @@
 package com.project.bitLabs;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import com.jobs.bitlabs.Implement.UserServieceImpl;
 
 @SpringBootTest
 class BitLabsApplicationTests {
@@ -10,4 +13,6 @@ class BitLabsApplicationTests {
 	void contextLoads() {
 	}
 
+	@InjectMocks
+	private UserServieceImpl userService;
 }

@@ -2,4 +2,5 @@
 <typeInfoHistroy>
     <typeInfo handle="=bitLabs/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jobs.bitlabs.service{NotificationService.java[NotificationService" modifiers="513" timestamp="1731580332566"/>
     <typeInfo handle="=bitLabs/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.jobs.bitlabs.service{JobApplicationService.java[JobApplicationService" modifiers="513" timestamp="1731575788036"/>
+    <typeInfo handle="=bitLabs/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.jobs.bitlabs{CompanyProfileServiceImplTest.java[CompanyProfileServiceImplTest" modifiers="0" timestamp="1731479225878"/>
 </typeInfoHistroy>

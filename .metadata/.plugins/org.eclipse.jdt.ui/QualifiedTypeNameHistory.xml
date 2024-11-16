@@ -20,13 +20,9 @@
     <fullyQualifiedTypeName name="com.jobs.bitlabs.dto.NotificationDto"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.Notification"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="com.jobs.bitlabs.repo.UserRepo"/>
-    <fullyQualifiedTypeName name="com.jobs.bitlabs.repo.CompanyJobRepo"/>
-    <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.Users"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.CompanyJob"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.service.JobApplicationService"/>
-    <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.ApplicationStatus"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.NotificationType"/>
@@ -36,5 +32,18 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.enums.ApplicationStatus"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.Implement.UserServieceImpl"/>
+    <fullyQualifiedTypeName name="org.mockito.InjectMocks"/>
+    <fullyQualifiedTypeName name="org.mockito.Mock"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.repo.UserRepo"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.repo.CompanyJobRepo"/>
     <fullyQualifiedTypeName name="com.jobs.bitlabs.service.NotificationService"/>
+    <fullyQualifiedTypeName name="org.modelmapper.ModelMapper"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeEach"/>
+    <fullyQualifiedTypeName name="org.mockito.MockitoAnnotations"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.dto.UserDto"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.entity.Users"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="com.jobs.bitlabs.exception.CustomException"/>
 </qualifiedTypeNameHistroy>
